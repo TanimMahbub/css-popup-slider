@@ -1,2 +1,2 @@
-# css-popup-slider
-Pure CSS popup slider for experiment
+## css-popup-slider
+Pure CSS popup slider for experiment. Popping up the slider, next item, previous item - all of them are areated by CSS trcik using `:target` check out the [live demo](https://tanimmahbub.github.io/css-popup-slider/gallery.html)
