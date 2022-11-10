@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- ==================================-->
+	<!-- ======= meta tags start here =====-->
+	<meta charset="UTF-8">
+
+	<!-- ========== paget title ===========-->
+	<title>.: CSS Image Gallery with Popup Slider :.</title>
+	<!-- ======== paget title end =========-->
+
+	<meta name="description" content="CSS Image Gallery with Popup Slider">
+	<meta name="keywords" content="gallery, image gallery, css image gallery, css light box, css pop up slider, image slider, css image slider">
+	<meta name="author" content="Tanim Mahbub">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- ======= meta tags end here =======-->
+	<!-- ==================================-->
+
+	<!-- ========== css library ===========-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+	<!-- ======== css library end =========-->
+
+	<!-- =================================== -->
+	<!-- ========= style sheet ============= -->
+	<link rel="stylesheet" href="css/style.css"><!-- === main style sheet === -->
+	<link rel="stylesheet" href="css/style.responsive.css"><!-- === @media query === -->
+	<!-- ===== style sheet end here ======== -->
+	<!-- =================================== -->
+
+</head>
+
+<body>
+
+	<header>
+		<h2>CSS Image Gallery with</h2>
+		<a href="gallery.html"><img src="images/CSSLIGHTBOX-logo.png" alt="logo" class="logo"></a>
+		
+		<input type="checkbox" id="menu-button">
+		<label for="menu-button">
+			<i class="fa fa-picture-o"></i>
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-bars"></i>
+		</label>
+		<div class="clr"></div>
+		<ul>
+			<li><a href="gallery.html" class="active">Gallery-1</a></li>
+			<li><a href="gallery-2.html">Gallery-2</a></li>
+			<li><a href="gallery-3.html">Gallery-3</a></li>
+			<li><a href="gallery-4.html">Gallery-4</a></li>
+			<li><a href="gallery-5.html">Gallery-5</a></li>
+			<li><a href="gallery-6.html">Gallery-6</a></li>
+		</ul>
+	</header>
+
+	<div class="clr"></div>
+	
+	<h1 class="effect-name">Fade In</h1>
+	
+	<div class="gallery-wrapper">
+		<div class="our-gallery">
+
+			<div class="image-box">
+				<ul class="social social-left">
+					<li><a href="#" class="share"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+				<a href="#css-lightbox1" class="display img-1" title="click to see full image"><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="css-lightbox" id="css-lightbox1">
+				<a href=#close-slider class="back"></a>
+				<a href="#css-lightbox8" class="prev"><i class="fa fa-angle-left"></i></a>
+				<div class="css-lightbox-img effect-1">
+					<img src="images/image1.jpg" alt="here is an image">
+				</div>
+				<a href="#css-lightbox2" class="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+			
+			
+			<div class="image-box">
+				<ul class="social social-left">
+					<li><a href="#" class="share"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+				<a href="#css-lightbox2" class="display img-2" title="click to see full image"><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="css-lightbox" id="css-lightbox2">
+				<a href=#close-slider class="back"></a>
+				<a href="#css-lightbox1" class="prev"><i class="fa fa-angle-left"></i></a>
+				<div class="css-lightbox-img effect-1">
+					<img src="images/image2.jpg" alt="here is an image">
+				</div>
+				<a href="#css-lightbox3" class="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+			
+
+			<div class="image-box">
+				<ul class="social social-left">
+					<li><a href="#" class="share"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+				<a href="#css-lightbox3" class="display img-3" title="click to see full image"><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="css-lightbox" id="css-lightbox3">
+				<a href=#close-slider class="back"></a>
+				<a href="#css-lightbox2" class="prev"><i class="fa fa-angle-left"></i></a>
+				<div class="css-lightbox-img effect-1">
+					<img src="images/image3.jpg" alt="here is an image">
+				</div>
+				<a href="#css-lightbox4" class="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+			
+
+			<div class="image-box">
+				<ul class="social social-left">
+					<li><a href="#" class="share"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+				<a href="#css-lightbox4" class="display img-4" title="click to see full image"><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="css-lightbox" id="css-lightbox4">
+				<a href=#close-slider class="back"></a>
+				<a href="#css-lightbox3" class="prev"><i class="fa fa-angle-left"></i></a>
+				<div class="css-lightbox-img effect-1">
+					<img src="images/image4.jpg" alt="here is an image">
+				</div>
+				<a href="#css-lightbox5" class="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+			
+	
+			<div class="image-box">
+				<ul class="social social-left">
+					<li><a href="#" class="share"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+				<a href="#css-lightbox5" class="display img-5" title="click to see full image"><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="css-lightbox" id="css-lightbox5">
+				<a href=#close-slider class="back"></a>
+				<a href="#css-lightbox4" class="prev"><i class="fa fa-angle-left"></i></a>
+				<div class="css-lightbox-img effect-1">
+					<img src="images/image5.jpg" alt="here is an image">
+				</div>
+				<a href="#css-lightbox6" class="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+			
+
+			<div class="image-box">
+				<ul class="social social-left">
+					<li><a href="#" class="share"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+				<a href="#css-lightbox6" class="display img-6" title="click to see full image"><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="css-lightbox" id="css-lightbox6">
+				<a href=#close-slider class="back"></a>
+				<a href="#css-lightbox5" class="prev"><i class="fa fa-angle-left"></i></a>
+				<div class="css-lightbox-img effect-1">
+					<img src="images/image6.jpg" alt="here is an image">
+				</div>
+				<a href="#css-lightbox7" class="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+			
+
+			<div class="image-box">
+				<ul class="social social-left">
+					<li><a href="#" class="share"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+				<a href="#css-lightbox7" class="display img-7" title="click to see full image"><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="css-lightbox" id="css-lightbox7">
+				<a href=#close-slider class="back"></a>
+				<a href="#css-lightbox6" class="prev"><i class="fa fa-angle-left"></i></a>
+				<div class="css-lightbox-img effect-1">
+					<img src="images/image7.jpg" alt="here is an image">
+				</div>
+				<a href="#css-lightbox8" class="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+			
+
+			<div class="image-box">
+				<ul class="social social-left">
+					<li><a href="#" class="share"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="share"><i class="fa fa-flickr"></i></a></li>
+				</ul>
+				<a href="#css-lightbox8" class="display img-8"><i class="fa fa-search-plus"></i></a>
+			</div>
+			<div class="css-lightbox" id="css-lightbox8">
+				<a href=#close-slider class="back"></a>
+				<a href="#css-lightbox7" class="prev"><i class="fa fa-angle-left"></i></a>
+				<div class="css-lightbox-img effect-1">
+					<img src="images/image8.jpg" alt="here is an image">
+				</div>
+				<a href="#css-lightbox1" class="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+			
+		</div>
+	</div>
+	<div class="clr"></div>
+
+</body>
+
+</html>

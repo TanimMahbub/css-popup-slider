@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul, li {
+    list-style-type: none;
+}
+
+.clr {
+	clear: both;
+}
+
+body {
+	background: #333;
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
+}
+/**********************************gallery style**********************************/
+
+h1.effect-name {
+	text-align: center;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	line-height: 50px;
+	color: rgba(255,255,255,.5);
+}
+
+header {
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	height: auto;
+	padding: 0px 60px;
+	margin-bottom: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+img.logo {
+	height:auto;
+	width: 200px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+header h2 {
+	font-family: 'Raleway', sans-serif;
+	text-align: left;
+	line-height: 50px;
+	-webkit-transform: translateY(30%);
+	-ms-transform: translateY(30%);
+	-o-transform: translateY(30%);
+	transform: translateY(30%);
+	font-weight: 500;
+	color: rgba(255,255,255,.5);
+}
+
+header ul {
+	float: right;
+	position: absolute;
+	right: 5%;
+	top: 100%;
+	-webkit-transform: translate(0, -110%);
+	-ms-transform: translate(0, -110%);
+	-o-transform: translate(0, -110%);
+	transform: translate(0, -110%);
+}
+
+header li {
+	float: left;
+}
+
+header li a {
+	display: block;
+	padding: 10px 20px;
+	color: rgba(255,255,255,.5);
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+header li a:hover,
+header li a.active {
+	padding: 10px 20px;
+	background: #333;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+header label {
+	width: 50px;
+	display: none;
+	float: right;
+	padding-bottom: 5px;
+	position: relative;
+	margin-top: 20px;
+}
+
+header label i.fa {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 40px;
+	color: #444;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+header label i.fa-picture-o {
+	left: -100%;
+	color: #666;
+}
+
+header label i.fa-plus {
+	visibility: hidden;
+	opacity: 0;
+}
+
+header label i.fa:hover {
+	color: #555;
+}
+
+header input {
+	display: none;
+}
+
+.gallery-wrapper {
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.our-gallery {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	display: block;
+	z-index: 1;
+}
+
+.image-box {
+	width: 24%;
+	float: left;
+	position: relative;
+	margin: 5px 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	border: 1px solid rgba(255,255,255,0);
+	-webkit-box-shadow: 0 5px 20px -5px #000;
+	box-shadow: 0 5px 20px -5px #000;
+}
+
+/* ====================== social buttons ===================== */
+
+/* social icon default style */
+ul.social {
+	position: absolute;
+	z-index: 5;
+}
+
+ul.social li {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+.image-box:hover ul.social li {
+	visibility: visible;
+	opacity: 1;
+}
+
+ul.social li:nth-child(odd) {
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+}
+ul.social li:nth-child(even) {
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
+}
+
+ul.social li a {
+	font-size: 18px;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgba(51,51,51,.5);
+	color: rgba(255,255,255,.5);
+	-webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+ul.social i.fa {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+ul.social a:hover {
+	background: rgba(255,255,255,.5);
+	color: #333;
+}
+/* social icon default style end */
+
+/* social icon-bar style for position */
+ul.social-left,
+ul.social-right {
+	height: 100%;
+	top: 0;
+}
+
+ul.social-top,
+ul.social-bottom {
+	width: 100%;
+	left: 0;
+}
+
+ul.social-left {
+	left: 5px;	
+}
+
+ul.social-right {
+	right: 5px;
+}
+
+ul.social-top {
+	top: 5px;
+}
+
+ul.social-bottom {
+	bottom: 5px;
+}
+
+ul.social-left li,
+ul.social-right li {
+	width: 50px;
+	height: 20%;
+}
+
+ul.social-top li,
+ul.social-bottom li {
+	width: 20%;
+	height: 50px;
+	float: left;
+}
+/* social icon-bar style for position end here */
+
+/* ====================== social buttons end ================== */
+
+a.display {
+	display: block;
+	width: 100%;
+	height: 200px;
+	-webkit-transition: all .3s linear;
+    transition: all .3s linear;
+	z-index: 3;
+	position: relative;
+	cursor: -webkit-zoom-in;
+	cursor: -ms-zoom-in;
+	cursor: zoom-in;
+}
+
+.image-box:hover a.display {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 0 0 7px rgba(0,0,0,.1);
+}
+
+a.display i.fa {
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: all .3s ease;
+    transition: all .3s ease;
+	visibility: hidden;
+	opacity: 0;
+	z-index: -1;
+}
+
+a.display i.fa {
+	height: 100%;
+	font-size: 60px;
+	color: rgba(255,255,255,.5);
+	line-height: 200px;
+	text-align: center;
+	display: block;
+	background: rgba(0,0,0,.8);
+}
+
+.image-box:hover a.display > i.fa {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	visibility: visible;
+	opacity: 1;
+} 
+
+a.img-1 {
+	background: url(../images/image1.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+a.img-2 {
+	background: url(../images/image2.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+a.img-3 {
+	background: url(../images/image3.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+a.img-4 {
+	background: url(../images/image4.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+a.img-5 {
+	background: url(../images/image5.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+a.img-6 {
+	background: url(../images/image6.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+a.img-7 {
+	background: url(../images/image7.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+a.img-8 {
+	background: url(../images/image8.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+footer {
+	width: 100%;
+	height: 70px;
+	margin-top: 50px;
+	background: rgba(0,0,0,.5);
+}
+
+footer span {
+	display: block;
+	line-height: 70px;
+	color: rgba(255,255,255,.5);
+	text-align: center;
+}
+
+footer a {
+	color: rgba(255,255,255,.8);
+}
+
+/* ======================== this style is for CSS LIGHTBOX ======================== */
+
+.css-lightbox-img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	z-index: 99;
+}
+
+
+/* ===================== lightbox sliding-effects style ======================== */
+
+/* effect-1 */
+.effect-1 {
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* effect-2 */
+.effect-2 {
+	-webkit-transform: translate(-80%, -50%);
+	-ms-transform: translate(-80%, -50%);
+	transform: translate(-80%, -50%);
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* effect-3 */
+.effect-3 {
+	-webkit-transform: translate(-20%, -50%);
+	-ms-transform: translate(-20%, -50%);
+	transform: translate(-20%, -50%);
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* effect-4 */
+.effect-4 {
+	-webkit-transform: translate(-50%, -80%);
+	-ms-transform: translate(-50%, -80%);
+	transform: translate(-50%, -80%);
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* effect-5 */
+.effect-5 {
+	-webkit-transform: translate(-50%, 80%);
+	-ms-transform: translate(-50%, 80%);
+	transform: translate(-50%, 80%);
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* effect-6 */
+.effect-6 {
+	-webkit-transform: translate(-50%, -50%) scaleX(2);
+	-ms-transform: translate(-50%, -50%) scaleX(2);
+	transform: translate(-50%, -50%) scaleX(2);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.css-lightbox:target .css-lightbox-img {
+    -webkit-transform: translate(-50%, -50%) scaleX(1);
+	-ms-transform: translate(-50%, -50%) scaleX(1);
+	transform: translate(-50%, -50%) scaleX(1);
+	visibility: visible;
+	opacity: 1;
+}
+
+/* =================== lightbox sliding-effects style end ====================== */
+
+
+.css-lightbox-img img {
+    height: auto;
+	max-height: 90vh;
+    max-width: 100vw;
+	width: auto;
+	z-index: 999;
+	padding: 20px 20px 20px 20px;
+}
+
+.css-lightbox a {
+    color: #fff;
+    display: none;
+    position:fixed;
+	-webkit-transition: background .3s linear, color .3s linear;
+	transition: background .3s linear, color .3s linear;
+	z-index: 999;
+}
+
+.css-lightbox a:hover {
+    color: #acacac;
+}
+
+a.prev,
+a.next {
+	bottom: 0;
+	right: 5px;
+	font-size: 70px;
+	line-height: 50px;
+	padding: 0 10px;
+}
+
+a.prev {
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+
+a.prev:after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 50px;
+	background: rgba(255,255,255,.5);
+	bottom: 10px;
+	left: 100%;
+}
+
+a.back {
+	top: 0;
+    right: 10px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: none;
+    background: transparent;
+	cursor: -webkit-zoom-out;
+	cursor: -ms-zoom-out;
+	cursor: zoom-out;
+	z-index: 99;
+}
+
+a.back:after {
+	content: "\f00d";
+	position: fixed;
+	font-family: 'FontAwesome';
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+	top: 5px;
+	right: 5px;
+	text-align: right;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.css-lightbox:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    display: none;
+	z-index: 6;
+}
+
+.css-lightbox:target:after {
+    display: block;
+}
+
+.css-lightbox:before {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    visibility: visible;
+	opacity: 1;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	transform: scaleX(0);
+	
+	z-index: 6;
+}
+
+.css-lightbox:target:before {
+    visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	-o-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.css-lightbox:target a {
+    display: block;
+}
+
+.css-lightbox:target a.back {
+	display: block;
+}
+
+/******************************css lightbox2 style from here**************/
